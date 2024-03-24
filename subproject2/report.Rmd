@@ -1,0 +1,37 @@
+---
+output: html_document
+---
+
+# Regression Analysis
+
+```{r, table}
+table <- readRDS(
+  file = here::here("subproject2/output/model/table.rds") 
+)
+```
+
+
+```{r, plot}
+#| fig.align = "center",
+#| out.width = "600px"
+knitr::include_graphics(
+  here::here("subproject2/output/model/scatterplot.png")
+)
+```
+
+## Model Evaluation
+
+```{r, table}
+table <- readRDS(
+  file = here::here("subproject2/output/model_evaluation/table.rds") 
+)
+```
+
+
+```{r, plot}
+#| fig.align = "center",
+#| out.width = "600px"
+knitr::include_graphics(
+  here::here("subproject2/output/model_evaluation/scatterplot.png")
+)
+```
