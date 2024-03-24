@@ -29,6 +29,7 @@ The Covid-19 report has been broken into two subprojects.
 	- `subproject2/report.Rmd` reads in output from `subproject2/output/` and creates the report for the regression analysis
 
 The subprojects are combined in `combined_report.Rmd`.
+config.yml will be used to format tables, plots and parameterize reports
 
 - [child](https://bookdown.org/yihui/rmarkdown-cookbook/child-document.html) documents are used to stitch together a final report
 
