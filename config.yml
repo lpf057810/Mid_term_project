@@ -1,0 +1,6 @@
+default:
+  production: TRUE
+  cutpoint: 1
+  parameter1: 10
+  Parameter2: 20
+  parameter3: "some value"
