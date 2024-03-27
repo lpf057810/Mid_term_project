@@ -16,7 +16,7 @@ data_clean<- data %>%
 
 saveRDS(
   data_clean,"data_clean.rds"
-)
+) 
 
 # I used the original data because omitting NA(s) remove all the male patients -Ngun
 
