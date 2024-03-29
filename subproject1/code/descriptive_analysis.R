@@ -44,7 +44,7 @@ ggsave(
   file.path(here::here("subproject1/output/descriptive_output", "bar_plot.png")),
   width = 10,
   height = 6
-) 
+)  
 
 
 
