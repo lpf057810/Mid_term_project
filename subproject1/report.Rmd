@@ -14,10 +14,6 @@ here::i_am(
 readRDS(
   file = here::here("subproject1/output/descriptive_output/table_one.rds") 
 )
-
-readRDS(
-  file = here::here("subproject1/output/descriptive_output/icu_gender.rds") 
-)
 ```
 
 ## Graphical analysis
