@@ -12,7 +12,7 @@ here::i_am(
 
 ```{r, table1}
 readRDS(
-  file = here::here("subproject1/output/descriptive_output/table_one.rds") 
+  file = here::here("subproject1/output/descriptive_output/table_one.rds")  
 )
 ```
 
