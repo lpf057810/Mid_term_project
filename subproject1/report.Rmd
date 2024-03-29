@@ -5,14 +5,14 @@ output: html_document
 ```{r, here-i-am}
 here::i_am(
  "subproject1/report.Rmd"
-)
+) 
 ```
 
 # Descriptive Analysis
 
 ```{r, table1}
 readRDS(
-  file = here::here("subproject1/output/descriptive_output/table_one.rds") 
+  file = here::here("subproject1/output/descriptive_output/table_one.rds")  
 )
 ```
 
@@ -23,7 +23,7 @@ readRDS(
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(
-  here::here("subproject1/output/descriptive_output/scatterplot.png")
+  here::here("subproject1/output/descriptive_output/bar_plot.png")
 )
 ```
 
@@ -31,7 +31,7 @@ knitr::include_graphics(
 
 ```{r,table}
 readRDS(
-  file = here::here("subproject1/output/chi-square/table.rds") 
+  here::here("subproject1/output/descriptive_output/bar_plot.png")
 )
 ```
 
