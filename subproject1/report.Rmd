@@ -31,7 +31,7 @@ knitr::include_graphics(
 
 ```{r,table}
 readRDS(
-  here::here("subproject1/output/descriptive_output/bar_plot.png")
+  here::here("subproject1/output/chi-square/table.rds")
 )
 ```
 
