@@ -39,7 +39,8 @@ readRDS(
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(
-  here::here("subproject1/output/chi-square/barchart.png")
+  here::here("subproject1/output/chi-square/combined_barcharts.png")
 )
+
 ```
 
