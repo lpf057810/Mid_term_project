@@ -2,17 +2,20 @@
 output: html_document
 ---
 
-```{r, here-i-am}
-here::i_am(
- "subproject2/report.Rmd"
-) 
-```
+
 
 # Regression Analysis
 
-```{r, table}
+```{r, echo=FALSE}
+here::i_am(
+  "subproject2/report.Rmd"
+)
+```
+
+
+```{r}
 readRDS(
-  file = here::here("subproject2/output/model/model_table1.rds") 
+  file = here::here("subproject2/output/model/model_table.rds") 
 )
 readRDS(
   file = here::here("subproject2/output/model/model_upsampled_table.rds") 
@@ -24,7 +27,7 @@ readRDS(
 ```
 
 
-```{r, plot}
+```{r}
 #| fig.align = "center",
 #| out.width = "3600px"
 knitr::include_graphics(
@@ -40,14 +43,14 @@ knitr::include_graphics(
 
 ## Model Evaluation
 
-```{r, table}
+```{r}
  readRDS(
   file = here::here("subproject2/output/model_evaluation/metrics_comparison_table.rds") 
 )
 ```
 
 
-```{r, plot}
+```{r}
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(
