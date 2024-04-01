@@ -2,28 +2,47 @@
 output: html_document
 ---
 
+```{r, here-i-am}
+here::i_am(
+ "subproject2/report.Rmd"
+) 
+```
+
 # Regression Analysis
 
 ```{r, table}
-table <- readRDS(
-  file = here::here("subproject2/output/model/table.rds") 
+readRDS(
+  file = here::here("subproject2/output/model/model_table1.rds") 
+)
+readRDS(
+  file = here::here("subproject2/output/model/model_upsampled_table.rds") 
+)
+
+readRDS(
+  file = here::here("subproject2/output/model/stepwise_model_table.rds")
 )
 ```
 
 
 ```{r, plot}
 #| fig.align = "center",
-#| out.width = "600px"
+#| out.width = "3600px"
 knitr::include_graphics(
-  here::here("subproject2/output/model/scatterplot.png")
+  here::here("subproject2/output/model/QQplot.png")
+)
+knitr::include_graphics(
+  here::here("subproject2/output/model/model_upsampled.png")
+)
+knitr::include_graphics(
+  here::here("subproject2/output/model/stepwise_model.png")
 )
 ```
 
 ## Model Evaluation
 
 ```{r, table}
-table <- readRDS(
-  file = here::here("subproject2/output/model_evaluation/table.rds") 
+ readRDS(
+  file = here::here("subproject2/output/model_evaluation/metrics_comparison_table.rds") 
 )
 ```
 
@@ -32,6 +51,6 @@ table <- readRDS(
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(
-  here::here("subproject2/output/model_evaluation/scatterplot.png")
+  here::here("subproject2/output/model_evaluation/ROC_Curve_Comparison.png")
 )
 ```
