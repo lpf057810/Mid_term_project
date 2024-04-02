@@ -1,6 +1,6 @@
-combined_report.html: render_combined_report.R \
-  combined_report.Rmd subproject1/report.Rmd subproject2/report.Rmd
-	Rscript render_combined_report.R
+dynamic_report.html: render_dynamic_report.R \
+  dynamic_report.Rmd subproject1/report.Rmd subproject2/report.Rmd
+	Rscript render_dynamic_report.R
 
 subproject1/output/chi-square/table.rds: subproject1/code/chi-square.R data/data_clean.rds
 	Rscript subproject1/code/chi-square.R
