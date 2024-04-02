@@ -35,7 +35,7 @@ The Covid-19 report has been broken into two subprojects.
         - 
 The subprojects are inserted into `dynamic_report.Rmd` dynamically. The user can change the `params` in yaml title by switching the value from `subproject1` to `subproject2` to show different parts of analysis.
 
-Thus, to produce the final report successfully, users are required to generate the `report.html` for subprojects first, and choose which subproject you want to display in the yaml title. The dynamic report will insert the related `report.html` file into final report.
+Thus, to produce the final report successfully, users are required to generate the `report.html` using `make` command from terminal for two subprojects under their folders, and choose which subproject you want to display in the yaml title. The dynamic report will insert the related `report.html` file into final report by using `make` command from terminal under the main folder.
 
 
 
