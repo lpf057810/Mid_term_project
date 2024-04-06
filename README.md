@@ -32,10 +32,19 @@ The Covid-19 report has been broken into two subprojects.
 	- `subproject2/report.Rmd` reads in output from `subproject2/output/` and creates the report for the regression analysis
         - `suproject2/render_report.R` renders the report for subproject2
         - `subproject2/Makefile` can help user produce the report for subproject2 using command line.
-        - 
+      
 The subprojects are inserted into `dynamic_report.Rmd` dynamically. The user can change the `params` in yaml title by switching the value from `subproject1` to `subproject2` to show different parts of analysis.
 
-Thus, to produce the final report successfully, users are required to generate the `report.html` using `make` command from terminal for two subprojects under their folders, and choose which subproject you want to display in the yaml title. The dynamic report will insert the related `report.html` file into final report by using `make` command from terminal under the main folder.
+# Produce report guildance:
+
+1. Users are recommended to use `setwd()` to locate the `~Midterm_project` folder
+2. Make sure you have installed the `renv` package (`install.packages("renv")`)
+3. Use `source("renv/activate.R")` to check whether R packages have been installed
+4. Use `renv::restore()` to install packages in the `renv.lock` file
+5. Use `cd` go to `subproject1` and `subproject2` to generate reports for each subproject using `make` in the command line
+6. Go back the main folder and use `make` to get the dynamic report.
+7. If you want to see different parts analysis, please change the `params` in yaml title by switching the value from `subproject1` to `subproject2` and use `make` under the main folder to produce the report again
+   
 
 
 
