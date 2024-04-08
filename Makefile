@@ -37,4 +37,9 @@ subproject2/output/model_evaluation/ROC_Curve_Comparison.png: subproject2/code/m
 	
 subproject2/output/model_evaluation/metrics_comparison_table.rds: subproject2/code/model_evaluation.R data/data_clean.rds
 	Rscript subproject2/code/model_evaluation.R
+
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt= FALSE)"
+	
 	
