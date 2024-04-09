@@ -37,12 +37,12 @@ The subprojects are inserted into `dynamic_report.Rmd` dynamically. The user can
 
 # Produce report guildance:
 
-1. Users are required to use `setwd()` to set under the `Midterm_project` folder
+1. Users are required to use setwd() to set the working directory to the `Midterm_project` folder, for example, setwd("C:/Desktop/Midterm_project").
 2. Make sure you have installed the `renv` package (`install.packages("renv")`)
 3. Use `make install` under the main folder to synchroniz packages
 4. Users are required to go to `subproject1` and `subproject2`  generating reports for each subproject first using `make` in the command line 
 4. Go back to the main folder and use `make` and it will insert the subproject report into the dynamic report
-6. If you want to see different parts analysis, please change the `params` in yaml title by switching the value from `subproject1` to `subproject2` and use `make` under the main folder to produce the report again.
+6. If you want to see different parts analysis, please change the `params` in yaml title by switching the value from `Subproject1` to `Subproject2` and use `make` under the main folder to produce the report again.
    
 
 
