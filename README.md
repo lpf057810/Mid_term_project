@@ -39,7 +39,8 @@ The subprojects are inserted into `dynamic_report.Rmd` dynamically. The user can
 1. Make sure you have installed the `renv` package (`install.packages("renv")`)
 2. Use `make install` under the main folder to synchroniz packages
 3. Use `make` under the main folder to get  the dynamic report
-6. If you want to see different parts analysis, please change the `params` in yaml title by switching the value from `Subproject1` to `Subproject2` and use `make` under the main folder to produce the report again.
+4. If you want to see different parts analysis, please change the `params` in yaml title by switching the value from `Subproject1` to `Subproject2` or change the plaha level.
+5. Use `make` under the main folder to produce the report again.
    
 
 
