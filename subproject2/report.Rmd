@@ -8,21 +8,21 @@ output: html_document
 
 ```{r, echo=FALSE}
 here::i_am(
-  "subproject2/report.Rmd"
+  "report.Rmd"
 )
 ```
 
 
 ```{r}
 readRDS(
-  file = here::here("subproject2/output/model/model_table.rds") 
+  file = here::here("output/model/model_table.rds") 
 )
 readRDS(
-  file = here::here("subproject2/output/model/model_upsampled_table.rds") 
+  file = here::here("output/model/model_upsampled_table.rds") 
 )
 
 readRDS(
-  file = here::here("subproject2/output/model/stepwise_model_table.rds")
+  file = here::here("output/model/stepwise_model_table.rds")
 )
 ```
 
@@ -31,13 +31,13 @@ readRDS(
 #| fig.align = "center",
 #| out.width = "3600px"
 knitr::include_graphics(
-  here::here("subproject2/output/model/QQplot.png")
+  here::here("output/model/QQplot.png")
 )
 knitr::include_graphics(
-  here::here("subproject2/output/model/model_upsampled.png")
+  here::here("output/model/model_upsampled.png")
 )
 knitr::include_graphics(
-  here::here("subproject2/output/model/stepwise_model.png")
+  here::here("output/model/stepwise_model.png")
 )
 ```
 
@@ -45,7 +45,7 @@ knitr::include_graphics(
 
 ```{r}
  readRDS(
-  file = here::here("subproject2/output/model_evaluation/metrics_comparison_table.rds") 
+  file = here::here("output/model_evaluation/metrics_comparison_table.rds") 
 )
 ```
 
@@ -54,6 +54,6 @@ knitr::include_graphics(
 #| fig.align = "center",
 #| out.width = "600px"
 knitr::include_graphics(
-  here::here("subproject2/output/model_evaluation/ROC_Curve_Comparison.png")
+  here::here("output/model_evaluation/ROC_Curve_Comparison.png")
 )
 ```

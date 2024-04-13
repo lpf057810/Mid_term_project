@@ -1,10 +1,10 @@
 here::i_am(
-  "render_report.R"
+  "subproject1/render_report.R"
 )
 
 library(rmarkdown)
 
 render(
-  "report.Rmd",
+  "subproject1/report.Rmd",
   knit_root_dir = here::here()
 )
