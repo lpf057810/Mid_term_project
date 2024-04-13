@@ -22,7 +22,7 @@ subproject2/report.html: subproject2/report.Rmd subproject2/output/model/model_t
 
 data/data_clean.rds: data/covid_sub.csv
 	Rscript data/clean.R
-
+	
 .PHONY: clean
 clean:
 	rm -f dynamic_report.html subproject1/report.html subproject2/report.html subproject1/output/*/*.rds subproject1/output/*/*.png subproject2/output/*/*.rds subproject2/output/*/*.png data/data_clean.rds
