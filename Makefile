@@ -35,7 +35,7 @@ data/data_clean.rds: data/covid_sub.csv
 .PHONY: clean
 clean:
 	rm -f dynamic_report.html subproject1/report.html subproject2/report.html
-	rm -rf subproject1/output/* subproject2/output/* data/data_clean.rds
+	rm -rf subproject1/output/chi-square/* subproject1/output/descriptive_output/* subproject2/output/model/* subproject2/output/model_evaluation/* data/data_clean.rds
 
 .PHONY: install
 install:
